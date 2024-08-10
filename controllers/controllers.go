@@ -2,6 +2,7 @@ package controllers
 
 import (
 	"github.com/gofiber/fiber/v2"
+	"github.com/golang-jwt/jwt"
 	"go-jwt-auth-api/database"
 	"go-jwt-auth-api/models"
 	"golang.org/x/crypto/bcrypt"

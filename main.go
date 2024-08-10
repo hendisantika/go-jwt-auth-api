@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/gofiber/fiber/v2"
+	"github.com/hendisantika/go-jwt-auth-api/routes"
 )
 
 //TIP To run your code, right-click the code and select <b>Run</b>. Alternatively, click
@@ -19,6 +21,12 @@ func main() {
 		// right-click your code in the editor and select the <b>Debug</b> option.
 		fmt.Println("i =", 100/i)
 	}
+
+	app := fiber.New()
+
+	routes.Setup(app) // A routes package/folder is created with 'Setup' function created.
+
+	app.Listen(":8000")
 }
 
 //TIP See GoLand help at <a href="https://www.jetbrains.com/help/go/">jetbrains.com/help/go/</a>.

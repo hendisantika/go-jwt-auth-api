@@ -2,9 +2,9 @@ package database
 
 import (
 	"fmt"
+	"go-jwt-auth-api/models"
 	"log"
 
-	"github.com/hendisantika/go-jwt-auth-api/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )

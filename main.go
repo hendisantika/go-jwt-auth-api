@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/gofiber/fiber/v2"
-	"github.com/hendisantika/go-jwt-auth-api/routes"
+	"go-jwt-auth-api/routes"
 )
 
 //TIP To run your code, right-click the code and select <b>Run</b>. Alternatively, click
